@@ -1,7 +1,21 @@
-function multiply(a: number, b: number) {
-  return a * b;
-}
-console.log(multiply(11, 5));
+// function multiply(a: number, b: number) {
+//   return a * b;
+// }
+// console.log(multiply(11, 5));
 
-//array 
+//array
 
+let a: (string | number)[] = [];
+a.push("asd");
+
+//object
+let c: {
+  name: string;
+  age: number;
+  adult: boolean;
+};
+c = {
+  name: "Aurnab",
+  age: 10,
+  adult: true,
+};
