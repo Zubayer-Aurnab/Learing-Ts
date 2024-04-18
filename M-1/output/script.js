@@ -4,20 +4,31 @@
 // }
 // console.log(multiply(11, 5));
 //array
-let a = [];
-a.push("asd");
-//object
-let c;
-c = {
-    name: "Aurnab",
-    age: 10,
-    adult: true,
+// let a: (string | number)[] = [];
+// a.push("asd");
+// //object
+// let c: {
+//   name: string;
+//   age: number;
+//   adult: boolean;
+// };
+// c = {
+//   name: "Aurnab",
+//   age: 10,
+//   adult: true,
+// };
+// let b: any;
+// b = 5;
+// b = "string";
+// console.log(b);
+// let q: any[] = [];
+// q.push("bangladesh");
+// console.log(q);
+///// function
+let myFnc;
+myFnc = (a, b, c = "true") => {
+    console.log(c);
+    console.log(`hello ${a} + ${b}`);
+    return a + " " + b + " " + c;
 };
-let b;
-b = 5;
-b = "string";
-console.log(b);
-let q = [];
-q.push("bangladesh");
-q.push(43);
-console.log(q);
+console.log(myFnc("zuba", "aur"));

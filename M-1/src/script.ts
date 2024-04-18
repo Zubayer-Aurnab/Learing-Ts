@@ -5,27 +5,39 @@
 
 //array
 
-let a: (string | number)[] = [];
-a.push("asd");
+// let a: (string | number)[] = [];
+// a.push("asd");
 
-//object
-let c: {
-  name: string;
-  age: number;
-  adult: boolean;
+// //object
+// let c: {
+//   name: string;
+//   age: number;
+//   adult: boolean;
+// };
+// c = {
+//   name: "Aurnab",
+//   age: 10,
+//   adult: true,
+// };
+
+// let b: any;
+// b = 5;
+// b = "string";
+// console.log(b);
+
+// let q: any[] = [];
+// q.push("bangladesh");
+
+// console.log(q);
+
+///// function
+
+let myFnc: Function;
+
+myFnc = (a: string, b: string, c: string = "true") : string => {
+  console.log(c);
+  console.log(`hello ${a} + ${b}`);
+  return a + " " + b + " " + c;
 };
-c = {
-  name: "Aurnab",
-  age: 10,
-  adult: true,
-};
 
-let b: any;
-b = 5;
-b = "string";
-console.log(b);
-
-let q: any[] = [];
-q.push("bangladesh");
-
-console.log(q)
+console.log(myFnc("zuba", "aur"));
