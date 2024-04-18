@@ -32,12 +32,27 @@
 
 ///// function
 
-let myFnc: Function;
+// let myFnc: Function;
 
-myFnc = (a: string, b: string, c: string = "true") : string => {
-  console.log(c);
-  console.log(`hello ${a} + ${b}`);
-  return a + " " + b + " " + c;
+// myFnc = (a: string, b: string, c: string = "true") : string => {
+//   console.log(c);
+//   console.log(`hello ${a} + ${b}`);
+//   return a + " " + b + " " + c;
+// };
+
+// console.log(myFnc("zuba", "aur"));
+
+type stringOrNum = string | number;
+type userType = { name: string; age: number };
+
+const userDetails = (id: stringOrNum, user: userType) => {
+  console.log(
+    `USer id is ${id} and name is ${user.name}user age is ${user.age}`
+  );
 };
 
-console.log(myFnc("zuba", "aur"));
+const sayHello = (user: userType) => {
+  console.log(
+    `hello ${user.name} ${user.age > 50 ? "sir" : "mr."} ${user.age}`
+  );
+};
