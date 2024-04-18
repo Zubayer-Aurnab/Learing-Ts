@@ -42,17 +42,24 @@
 
 // console.log(myFnc("zuba", "aur"));
 
-type stringOrNum = string | number;
-type userType = { name: string; age: number };
+// type stringOrNum = string | number;
+// type userType = { name: string; age: number };
 
-const userDetails = (id: stringOrNum, user: userType) => {
-  console.log(
-    `USer id is ${id} and name is ${user.name}user age is ${user.age}`
-  );
-};
+// const userDetails = (id: stringOrNum, user: userType) => {
+//   console.log(
+//     `USer id is ${id} and name is ${user.name}user age is ${user.age}`
+//   );
+// };
 
-const sayHello = (user: userType) => {
-  console.log(
-    `hello ${user.name} ${user.age > 50 ? "sir" : "mr."} ${user.age}`
-  );
+// const sayHello = (user: userType) => {
+//   console.log(
+//     `hello ${user.name} ${user.age > 50 ? "sir" : "mr."} ${user.age}`
+//   );
+// };
+
+let add: (a: number, b: number) => number;
+
+add = (a, b) => {
+  return a + b;
 };
+add (54,76)
