@@ -13,3 +13,11 @@ c = {
     age: 10,
     adult: true,
 };
+let b;
+b = 5;
+b = "string";
+console.log(b);
+let q = [];
+q.push("bangladesh");
+q.push(43);
+console.log(q);

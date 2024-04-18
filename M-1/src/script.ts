@@ -19,3 +19,13 @@ c = {
   age: 10,
   adult: true,
 };
+
+let b: any;
+b = 5;
+b = "string";
+console.log(b);
+
+let q: any[] = [];
+q.push("bangladesh");
+
+console.log(q)
