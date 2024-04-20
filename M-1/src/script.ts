@@ -57,9 +57,31 @@
 //   );
 // };
 
-let add: (a: number, b: number) => number;
+// let add: (a: number, b: number) => number;
 
-add = (a, b) => {
-  return a + b;
-};
-add (54,76)
+// add = (a, b) => {
+//   return a + b;
+// };
+// add (54,76)]
+
+class player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
+
+  play() {
+    console.log(`${this.name} is playing for ${this.country}`);
+  }
+}
+const messi = new player("messi", 40, "argentina");
+
+const players: player[] = [];
+players.push(messi);
+
+console.log(players)
